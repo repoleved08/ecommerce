@@ -35,5 +35,5 @@ CREATE TABLE `order_items` (
     `price` DECIMAL(18, 2) NOT NULL
 );
 
-ALTER TABLE `order_items` ADD FOREIGN KEY (`order_id`) REFERENCES `orders (`id`)`
-ALTER TABLE `order_items` ADD FOREIGN KEY (`product_id`) REFERENCES `products (`id`)`
+ALTER TABLE `order_items` ADD FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`);
+ALTER TABLE `order_items` ADD FOREIGN KEY (`product_id`) REFERENCES `products` (`id`);
